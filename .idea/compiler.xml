@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="um" />
         <module name="api" />
+        <module name="api-quanly-canbo" />
         <module name="api_qlykho" />
         <module name="token_backend" />
         <module name="api_qlcb" />
@@ -18,6 +19,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api" options="-parameters" />
+      <module name="api-quanly-canbo" options="-parameters" />
       <module name="api_qlcb" options="-parameters" />
       <module name="api_qlykho" options="-parameters" />
       <module name="token_backend" options="-parameters" />

@@ -83,7 +83,7 @@ public class TranferProfileService extends QueryService<TranferProfileDetail> {
 
         Specification<TranferProfileDetail> specification = Specification.where(null);
         if (criteria.getCode() != null) {
-            specification = specification.and(buildStringSpecification(criteria.getFullname(), TranferProfileDetail_.code));
+            specification = specification.and(buildStringSpecification(criteria.getCode(), TranferProfileDetail_.code));
         }
         if (criteria.getFullname() != null) {
             specification = specification.and(buildStringSpecification(criteria.getFullname(), TranferProfileDetail_.fullname));

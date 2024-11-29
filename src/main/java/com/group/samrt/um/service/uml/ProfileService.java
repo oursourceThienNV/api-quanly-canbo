@@ -83,7 +83,7 @@ public class ProfileService extends QueryService<Profile> {
 
         Specification<Profile> specification = Specification.where(null);
         if (criteria.getCode() != null) {
-            specification = specification.and(buildStringSpecification(criteria.getFullname(), Profile_.code));
+            specification = specification.and(buildStringSpecification(criteria.getCode(), Profile_.code));
         }
         if (criteria.getFullname() != null) {
             specification = specification.and(buildStringSpecification(criteria.getFullname(), Profile_.fullname));
